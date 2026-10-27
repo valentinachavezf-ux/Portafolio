@@ -115,3 +115,8 @@ footer{padding:90px 6% 55px;margin:0 1.5% 1.5%;background:#e8eceb;border-radius:
 .hackathon-item figcaption span{font-size:10px;color:#929d97;letter-spacing:.08em}
 .hackathon-hint{margin:18px 36px 0;font-size:11px;color:#909892;line-height:1.7}
 @media(max-width:650px){.hackathon-heading{padding:0 22px}.hackathon-strip{padding-left:22px;padding-right:22px;scroll-padding-inline:22px;gap:20px}.hackathon-hint{margin-left:22px;margin-right:22px}.hackathon-showcase{padding-top:26px}}
+
+/* Higher-fidelity exploration continues the hackathon narrative. */
+.fidelity-showcase{margin-top:28px;background:linear-gradient(125deg,#f0ede8,#f6f5f1 60%,#eeebf1)}
+.fidelity-showcase .eyebrow{margin-bottom:14px}
+.fidelity-screen img{left:0;width:180px;height:auto}
