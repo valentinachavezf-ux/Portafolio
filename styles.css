@@ -121,3 +121,9 @@ footer{padding:90px 6% 55px;margin:0 1.5% 1.5%;background:#e8eceb;border-radius:
 .prototype-full:focus-visible{outline:2px solid #788981;outline-offset:4px}
 .prototype-hint{text-align:center;margin:34px 0 0;font-size:11px;color:#909892;line-height:1.7}
 @media(max-width:650px){.prototype-comparison{padding:26px 16px}.prototype-pair{gap:16px;margin-top:28px}.prototype-column figcaption{min-height:142px}.prototype-column h4{font-size:15px}.prototype-column figcaption p{font-size:11px}.prototype-step{font-size:9px;letter-spacing:.07em}.prototype-device{border-radius:23px;padding:12px 4px 8px}.prototype-device::before{top:4px;height:2px}.prototype-viewport{border-radius:17px}.prototype-full{font-size:10px}.prototype-hint{margin-top:25px}}
+
+/* Before and after use the same independent, scrollable mobile frames. */
+.comparison-phone-stage{display:flex;justify-content:center;padding:16px 0 8px}
+.before-after-devices .prototype-device{flex:0 1 300px;min-width:0}
+.before-after-devices .comparison-scroll-hint{margin:18px 0 6px;text-align:center;font-size:11px;color:#909892}
+.before-after-devices .prototype-full{display:table;margin:0 auto}
