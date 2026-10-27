@@ -127,3 +127,10 @@ footer{padding:90px 6% 55px;margin:0 1.5% 1.5%;background:#e8eceb;border-radius:
 .before-after-devices .prototype-device{flex:0 1 300px;min-width:0}
 .before-after-devices .comparison-scroll-hint{margin:18px 0 6px;text-align:center;font-size:11px;color:#909892}
 .before-after-devices .prototype-full{display:table;margin:0 auto}
+
+/* Consistent desktop/mobile comparison containers. */
+#evolution .big-showcase .visual-card{background:#ffffffb8;display:grid;grid-template-rows:auto minmax(42px,auto) 600px auto;align-content:start}
+#evolution .big-showcase .visual-frame{height:600px;min-height:0;overflow-y:auto;overflow-x:hidden;padding:30px;background:#f6f7f6;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#a8b5ad transparent}
+#evolution .big-showcase .visual-frame img{flex-shrink:0}
+#evolution .big-showcase .visual-frame:focus-visible{outline:2px solid #8c9e93;outline-offset:3px}
+@media(max-width:650px){#evolution .big-showcase .visual-card{grid-template-rows:auto minmax(42px,auto) 480px auto}#evolution .big-showcase .visual-frame{height:480px;padding:20px}}
