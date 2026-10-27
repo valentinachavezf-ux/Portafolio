@@ -62,42 +62,39 @@ footer{padding:90px 6% 55px;margin:0 1.5% 1.5%;background:#e8eceb;border-radius:
 .extra-stage .visual-frame{max-width:390px;margin:auto}
 .extra-stage p{font-size:12px;color:#7c807e;text-align:center;margin-top:16px}
 
-/* Hero phones: graphite chassis, glass bezel and physical side keys. */
+/* Hero devices: polished titanium edge around a separate black glass face. */
 .cover-evolution .hero-phone{
- --device-radius:36px;
- border:1px solid #929798;
- border-radius:var(--device-radius);
- padding:13px 6px 9px;
- background:linear-gradient(105deg,#a7abad 0%,#414648 2%,#101314 4%,#202426 50%,#0c0e0f 96%,#757b7d 99%,#bdc0c1 100%);
- box-shadow:inset 0 0 0 2px #363b3d,inset 0 0 0 3px #090b0c,1px 1px 0 #b0b5b4,5px 8px 12px #17252218,16px 27px 35px -16px #17252245;
+ --device-radius:38px;
+ border:3px solid #b7babc;border-color:#eff0f0 #858b8e #c9cccd #e4e6e6;
+ border-radius:var(--device-radius);padding:19px 7px 15px;
+ background:linear-gradient(115deg,#292d30,#080a0b 28%,#111416 75%,#363b3f);
+ box-shadow:inset 0 0 0 1px #050607,0 0 0 1px #636b6e,3px 2px 0 1px #858d90,5px 4px 0 #41484c,8px 12px 16px #15232220,20px 32px 38px -14px #15232250;
 }
-.cover-evolution .hero-phone::before,
-.cover-evolution .hero-phone::after{
- content:"";position:absolute;width:3px;
- background:linear-gradient(90deg,#1a1d1e,#8e9597 50%,#343a3c);
- border-radius:2px;box-shadow:0 0 0 1px #12161733;
+.cover-evolution .hero-phone::before,.cover-evolution .hero-phone::after{
+ content:"";position:absolute;width:4px;border:1px solid #666e72;
+ background:linear-gradient(90deg,#d9dddf,#747d83 65%,#b6bdc0);
+ border-radius:3px;box-shadow:1px 1px 2px #1115;
 }
-.cover-evolution .hero-phone::before{left:-3px;top:22%;height:15%}
-.cover-evolution .hero-phone::after{right:-3px;top:31%;height:9%}
+.cover-evolution .hero-phone::before{left:-6px;top:23%;height:14%}
+.cover-evolution .hero-phone::after{right:-6px;top:32%;height:9%}
 .cover-evolution .hero-notch{
- top:5px;left:50%;transform:translateX(-50%);width:17%;height:3px;
- background:repeating-linear-gradient(90deg,#060708 0 1px,#323738 1px 2px);
- box-shadow:0 1px 0 #62696b55;border-radius:4px;
+ top:7px;left:50%;transform:translateX(-50%);width:25%;height:4px;
+ background:repeating-linear-gradient(90deg,#060708 0 1px,#363c40 1px 2px);
+ box-shadow:0 1px 0 #62696b80,0 -1px 1px #000;border-radius:5px;
 }
 .cover-evolution .hero-notch::after{
- content:"";position:absolute;left:calc(100% + 9px);top:-1px;
- width:5px;height:5px;border-radius:50%;
- background:radial-gradient(circle at 40% 35%,#456074 0 12%,#16242d 24%,#080b0d 55%,#3b4245 65%,#101415 80%);
+ content:"";position:absolute;left:calc(100% + 12px);top:-2px;
+ width:8px;height:8px;border-radius:50%;border:1px solid #41484e;
+ background:radial-gradient(circle at 38% 32%,#7791ad 0 8%,#304a68 12%,#111e31 30%,#030508 55%,#263746 70%,#06080b 80%);
 }
-.cover-evolution .hero-display{
- position:relative;border-radius:calc(var(--device-radius) - 7px);
- box-shadow:0 0 0 1px #000,inset 0 0 0 1px #ffffff18;
-}
+.cover-evolution .hero-display{position:relative;border-radius:calc(var(--device-radius) - 11px);box-shadow:0 0 0 1px #000,0 0 0 2px #454a4d55}
+.hero-glass{position:absolute;inset:19px 7px 15px;z-index:3;pointer-events:none;border-radius:calc(var(--device-radius) - 11px);background:linear-gradient(112deg,#ffffff18,transparent 24%,transparent 75%,#ffffff08);box-shadow:inset 1px 0 1px #ffffff30}
+.hero-home{position:absolute;bottom:5px;left:35%;width:30%;height:3px;border-radius:4px;background:#a9aeb0;box-shadow:0 1px 1px #000;pointer-events:none}
 @media(max-width:800px){
- .cover-evolution .hero-phone{--device-radius:25px;border-width:1px;border-radius:var(--device-radius);padding:10px 4px 7px}
- .cover-evolution .hero-notch{top:4px;height:2px}
- .cover-evolution .hero-notch::after{width:4px;height:4px;left:calc(100% + 6px)}
- .cover-evolution .hero-phone::before,.cover-evolution .hero-phone::after{width:2px}
- .cover-evolution .hero-phone::before{left:-2px}
- .cover-evolution .hero-phone::after{right:-2px}
+ .cover-evolution .hero-phone{--device-radius:28px;border-width:2px;border-radius:var(--device-radius);padding:15px 5px 12px}
+ .cover-evolution .hero-notch{top:6px;height:3px}
+ .cover-evolution .hero-notch::after{width:6px;height:6px;top:-1px;left:calc(100% + 8px)}
+ .cover-evolution .hero-phone::before,.cover-evolution .hero-phone::after{width:3px}
+ .cover-evolution .hero-phone::before{left:-5px}.cover-evolution .hero-phone::after{right:-5px}
+ .hero-glass{inset:15px 5px 12px}.hero-home{height:2px;bottom:4px}
 }
