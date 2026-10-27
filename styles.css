@@ -99,24 +99,25 @@ footer{padding:90px 6% 55px;margin:0 1.5% 1.5%;background:#e8eceb;border-radius:
  .hero-glass{inset:15px 5px 12px}.hero-home{height:2px;bottom:4px}
 }
 
-/* Hackathon concept: a compact sequence of details from the original artifact. */
-.hackathon-showcase{margin-top:55px;padding:36px 0 24px;border-radius:24px;background:linear-gradient(125deg,#e8eeea,#f0f2ef 60%,#e8edf1);overflow:hidden}
-.hackathon-heading{padding:0 36px;margin-bottom:32px}
-.hackathon-heading h3{font-size:15px;font-weight:500;letter-spacing:-.025em;margin:0 0 8px}
-.hackathon-heading p{font-size:12px;line-height:1.6;color:#878c8a;margin:0}
-.hackathon-strip{display:flex;justify-content:safe center;gap:26px;overflow-x:auto;padding:6px 36px 28px;scroll-snap-type:x mandatory;scroll-padding-inline:36px;scrollbar-width:thin;scrollbar-color:#b9c4be transparent}
-.hackathon-strip:focus-visible{outline:2px solid #788981;outline-offset:-3px}
-.hackathon-item{margin:0;flex:0 0 194px;scroll-snap-align:start}
-.hackathon-device{padding:15px 6px 10px;border-radius:27px;background:#252b2c;border:1px solid #747b7c;position:relative;box-shadow:0 8px 18px #26343115,inset 0 0 0 2px #3c4344}
-.hackathon-device::before{content:"";position:absolute;top:5px;left:41%;width:18%;height:3px;background:#101516;border-radius:3px}
-.hackathon-screen{position:relative;width:180px;height:410px;overflow:hidden;border-radius:19px;background:#ececec}
-.hackathon-screen img{display:block;position:absolute;left:-130px;top:var(--crop-y);width:450px;max-width:none;height:auto;cursor:zoom-in}
-.hackathon-item figcaption{display:flex;align-items:baseline;gap:10px;margin-top:19px;font-size:12px;line-height:1.5;color:#626c67}
-.hackathon-item figcaption span{font-size:10px;color:#929d97;letter-spacing:.08em}
-.hackathon-hint{margin:18px 36px 0;font-size:11px;color:#909892;line-height:1.7}
-@media(max-width:650px){.hackathon-heading{padding:0 22px}.hackathon-strip{padding-left:22px;padding-right:22px;scroll-padding-inline:22px;gap:20px}.hackathon-hint{margin-left:22px;margin-right:22px}.hackathon-showcase{padding-top:26px}}
-
-/* Higher-fidelity exploration continues the hackathon narrative. */
-.fidelity-showcase{margin-top:28px;background:linear-gradient(125deg,#f0ede8,#f6f5f1 60%,#eeebf1)}
-.fidelity-showcase .eyebrow{margin-bottom:14px}
-.fidelity-screen img{left:0;width:180px;height:auto}
+/* Two independent scrollable devices compare the same design journey. */
+.prototype-comparison{margin-top:55px;padding:36px;border-radius:24px;background:linear-gradient(125deg,#e8eeea,#f4f4ef 55%,#eeebf1)}
+.prototype-heading .eyebrow{margin-bottom:16px}
+.prototype-heading h3{font-size:23px;font-weight:400;letter-spacing:-.04em;margin:0 0 10px}
+.prototype-heading>p{font-size:13px;color:#7c8580;line-height:1.7;margin:0}
+.prototype-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,6vw,90px);max-width:760px;margin:38px auto 0}
+.prototype-column{margin:0;min-width:0;display:flex;flex-direction:column;align-items:center}
+.prototype-column figcaption{width:100%;max-width:300px;min-height:116px}
+.prototype-step{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8a9690}
+.prototype-column h4{font-size:17px;font-weight:500;letter-spacing:-.03em;margin:10px 0 6px}
+.prototype-column figcaption p{font-size:12px;line-height:1.7;color:#808984;margin:0}
+.prototype-device{width:100%;max-width:300px;padding:16px 7px 11px;border-radius:35px;background:#252b2c;border:1px solid #747b7c;position:relative;box-shadow:0 14px 25px #2634311c,inset 0 0 0 2px #3c4344}
+.prototype-device::before{content:"";position:absolute;top:6px;left:41%;width:18%;height:3px;background:#101516;border-radius:3px}
+.prototype-viewport{width:100%;aspect-ratio:9/19.5;overflow-y:auto;overflow-x:hidden;border-radius:26px;background:#ececec;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#8c9991 transparent}
+.prototype-viewport:focus-visible{outline:2px solid #aabeb2;outline-offset:2px}
+.prototype-viewport img{display:block;width:100%;height:auto}
+.wireframe-art{width:100%;aspect-ratio:720/7312;overflow:hidden}
+.wireframe-art img{width:250%;max-width:none;margin-left:-72.222222%}
+.prototype-full{font-size:11px;color:#727f77;margin-top:22px;padding:5px 0;border-bottom:1px solid #c6cfca}
+.prototype-full:focus-visible{outline:2px solid #788981;outline-offset:4px}
+.prototype-hint{text-align:center;margin:34px 0 0;font-size:11px;color:#909892;line-height:1.7}
+@media(max-width:650px){.prototype-comparison{padding:26px 16px}.prototype-pair{gap:16px;margin-top:28px}.prototype-column figcaption{min-height:142px}.prototype-column h4{font-size:15px}.prototype-column figcaption p{font-size:11px}.prototype-step{font-size:9px;letter-spacing:.07em}.prototype-device{border-radius:23px;padding:12px 4px 8px}.prototype-device::before{top:4px;height:2px}.prototype-viewport{border-radius:17px}.prototype-full{font-size:10px}.prototype-hint{margin-top:25px}}
